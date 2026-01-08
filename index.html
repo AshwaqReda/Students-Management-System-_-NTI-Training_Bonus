@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main_container">
+        <!-- head -->
+        <div class="head">
+            <h1>Students management system</h1>
+        </div>
+
+        <div class="inputs">
+            <input id="student_name" type="text" placeholder="student name....">
+            <div id="grades">
+                <input onkeyup="calcTotal()" id="Exam_grade" type="number" placeholder="Exam Grade...">
+                <input onkeyup="calcTotal()" id="Mid_grade" type="number" placeholder="MidTerm Grade...">
+                <input onkeyup="calcTotal()" id="TasksAverage" type="number" placeholder="Tasks Average...">
+                <input onkeyup="calcTotal()" id="attendancyPercent" type="number" placeholder="attendancy Percent...">
+                <input onkeyup="calcTotal()" id="Bonus" type="number" placeholder="Bonus...">
+                <small id="total">0000</small>
+                <small id="totalGrade">0000</small>
+            </div>
+
+            <button id="submit">Add New Student</button>
+
+
+        </div>
+
+        <div class="outputs">
+            <div class="searchBlock">
+                <input type="text" id="search" placeholder="search By Student Name...">
+
+
+
+            </div>
+
+        </div>
+
+        <div id="deleteAll">
+
+        </div>
+
+        <table>
+            <tr>
+                <th>id</th>
+                <th>StudentName</th>
+                <th>ExamGrade</th>
+                <th>MidTerm</th>
+                <th>TasksAvg</th>
+                <th>attendPercent</th>
+                <th>Bonus</th>
+                <th>total</th>
+                <th>TotalGrade</th>
+                <th>Status</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
